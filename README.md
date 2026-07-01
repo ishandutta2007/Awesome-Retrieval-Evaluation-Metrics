@@ -117,3 +117,16 @@ To assist with your documentation repository setup, let me know how you would li
 * I can generate a **Markdown matrix table** tracking the specific evaluation metrics and target scoring thresholds utilized by leading enterprise AI platforms to monitor real-time production RAG pipelines.
 * I can write a detailed technical explanation focusing on **how to leverage G-Eval or custom LLM prompting templates** to isolate and prevent evaluation bias (such as position bias or verbosity bias) inside automated judge modules.
 
+---
+
+##  Star History
+<div align="center">
+<a href="https://www.star-history.com/?repos=ishandutta2007%2FAwesome-Retrieval-Evaluation-Metrics&type=date&legend=bottom-right">
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Retrieval-Evaluation-Metrics&type=date&theme=dark&legend=bottom-right" />
+<source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Retrieval-Evaluation-Metrics&type=date&legend=bottom-right" />
+<img alt="Star History Chart" src="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Retrieval-Evaluation-Metrics&type=date&legend=bottom-right" />
+</picture>
+</a>
+</div>
+
