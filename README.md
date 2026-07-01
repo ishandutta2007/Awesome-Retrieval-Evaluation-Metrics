@@ -34,22 +34,22 @@ flowchart LR
 
 Retrieval evaluation frameworks are strictly categorized based on how the mathematical equations partition data blocks and account for token positional indices.
 
-### A. Binary Precision at K (P@K)
-*   **Mechanism:** Measures the exact ratio of relevant documents within the absolute top $K$ retrieved entries:
-    $$\text{Precision@K} = \frac{\text{Number of Relevant Documents in Top K}}{K}$$
-*   **Pros:** Highly interpretable and straightforward to monitor across commercial search dashboards.
-*   **Cons:** Highly volatile if $K$ is set poorly, and completely blind to the arrangement order within that top $K$ block.
+- ### A. Binary Precision at K (P@K)
+	*   **Mechanism:** Measures the exact ratio of relevant documents within the absolute top $K$ retrieved entries:
+	    $$\text{Precision@K} = \frac{\text{Number of Relevant Documents in Top K}}{K}$$
+	*   **Pros:** Highly interpretable and straightforward to monitor across commercial search dashboards.
+	*   **Cons:** Highly volatile if $K$ is set poorly, and completely blind to the arrangement order within that top $K$ block.
 
-### B. Mean Reciprocal Rank (MRR)
-*   **Mechanism:** Evaluates the system's ability to return the absolute best result immediately. It isolates the position rank ($k$) of the *very first relevant item* in the output list, computing its reciprocal value:
-    $$\text{MRR} = \frac{1}{M} \sum_{i=1}^{M} \frac{1}{k_i}$$
-*   **Application:** The default infrastructure optimizer for single-answer lookup engines, such as conversational FAQ bots or targeted e-commerce product SKU finders.
+- ### B. Mean Reciprocal Rank (MRR)
+	*   **Mechanism:** Evaluates the system's ability to return the absolute best result immediately. It isolates the position rank ($k$) of the *very first relevant item* in the output list, computing its reciprocal value:
+	    $$\text{MRR} = \frac{1}{M} \sum_{i=1}^{M} \frac{1}{k_i}$$
+	*   **Application:** The default infrastructure optimizer for single-answer lookup engines, such as conversational FAQ bots or targeted e-commerce product SKU finders.
 
-### C. Normalized Discounted Cumulative Gain (NDCG@K)
-*   **Mechanism:** Calculates the continuous logarithmic decay of graded document gains ($rel_i$) across sequence positions:
-    $$\text{DCG@K} = \sum_{i=1}^{K} \frac{2^{rel_i} - 1}{\log_2(i + 1)}$$
-    The final score is normalized ($\text{NDCG} = \frac{\text{DCG}}{\text{IDCG}}$) against an Ideal DCG (the score achieved if the database returned the documents in perfect mathematical relevance order).
-*   **Significance:** The gold-standard evaluation layer for complex recommendation grids and dense vector search ranking optimization.
+- ### C. Normalized Discounted Cumulative Gain (NDCG@K)
+	*   **Mechanism:** Calculates the continuous logarithmic decay of graded document gains ($rel_i$) across sequence positions:
+	    $$\text{DCG@K} = \sum_{i=1}^{K} \frac{2^{rel_i} - 1}{\log_2(i + 1)}$$
+	    The final score is normalized ($\text{NDCG} = \frac{\text{DCG}}{\text{IDCG}}$) against an Ideal DCG (the score achieved if the database returned the documents in perfect mathematical relevance order).
+	*   **Significance:** The gold-standard evaluation layer for complex recommendation grids and dense vector search ranking optimization.
 
 ---
 
