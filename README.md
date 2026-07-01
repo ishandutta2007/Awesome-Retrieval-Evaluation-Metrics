@@ -4,7 +4,13 @@
   <img src="assets/banner.svg" alt="Retrieval Evaluation Metrics Banner" width="100%">
 </p>
 
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+</p>
+
 ## 📊 Retrieval Evaluation Metrics: History, Progression, Variants, & Applications
+
+> **SEO Optimization Note:** Discover the complete guide to **Retrieval Evaluation Metrics** for Search Engines, Vector Databases, and **Retrieval-Augmented Generation (RAG)** systems. Optimize your search rank algorithms with detailed explanations of **NDCG@K**, **MRR**, **Precision@K**, and modern **LLM-as-a-Judge** frameworks (Ragas, TruLens, ARES).
 
 Retrieval Evaluation Metrics are the quantitative mathematical frameworks used to measure the accuracy, structural quality, and contextual relevance of Search Engines, Recommendation Systems, and Information Retrieval infrastructure. In modern artificial intelligence, evaluating retrieval is the foundational diagnostic pillar underpining **Retrieval-Augmented Generation (RAG)** stacks and vector databases. While classical database lookups rely on binary exact-match triggers, semantic vector search operates over volatile statistical similarity manifolds. Retrieval metrics allow machine learning engineers to definitively profile whether a system can source information-dense context chunks from vast unstructured repositories, surface the most critical details first, and eliminate irrelevant background noise before downstream processing or text synthesis occurs.
 
