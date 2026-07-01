@@ -1,11 +1,16 @@
 # Awesome-Retrieval-Evaluation-Metrics
-## Retrieval Evaluation Metrics: History, Progression, Variants, & Applications
+
+<p align="center">
+  <img src="assets/banner.svg" alt="Retrieval Evaluation Metrics Banner" width="100%">
+</p>
+
+## 📊 Retrieval Evaluation Metrics: History, Progression, Variants, & Applications
 
 Retrieval Evaluation Metrics are the quantitative mathematical frameworks used to measure the accuracy, structural quality, and contextual relevance of Search Engines, Recommendation Systems, and Information Retrieval infrastructure. In modern artificial intelligence, evaluating retrieval is the foundational diagnostic pillar underpining **Retrieval-Augmented Generation (RAG)** stacks and vector databases. While classical database lookups rely on binary exact-match triggers, semantic vector search operates over volatile statistical similarity manifolds. Retrieval metrics allow machine learning engineers to definitively profile whether a system can source information-dense context chunks from vast unstructured repositories, surface the most critical details first, and eliminate irrelevant background noise before downstream processing or text synthesis occurs.
 
 ---
 
-## 1. The Macro Chronological Evolution
+## 🕰️ 1. The Macro Chronological Evolution
 
 The technical framework governing retrieval assessment has transitioned from un-ranked categorical tracking to complex, rank-weighted decay matrices and modern multi-modal, model-driven evaluation agents.
 
@@ -27,7 +32,7 @@ flowchart LR
 
 ---
 
-## 2. Core Mathematical & Rank-Based Variants
+## 🧮 2. Core Mathematical & Rank-Based Variants
 
 Retrieval evaluation frameworks are strictly categorized based on how the mathematical equations partition data blocks and account for token positional indices.
 
@@ -39,7 +44,7 @@ Retrieval evaluation frameworks are strictly categorized based on how the mathem
 
 ---
 
-## 3. Advanced Model-Driven RAG Evaluation Pillars
+## 🤖 3. Advanced Model-Driven RAG Evaluation Pillars
 
 To safeguard large language models from generating factually corrupt or ungrounded responses, contemporary post-training evaluation loops deploy the "RAG Triad" agentic framework.
 
@@ -61,7 +66,7 @@ flowchart TD
 
 ---
 
-## 4. Production Engineering Challenges & Mitigations
+## ⚙️ 4. Production Engineering Challenges & Mitigations
 
 Deploying and scaling complex retrieval evaluation metrics across enterprise production pipelines introduces critical computational and validation constraints.
 
@@ -72,7 +77,7 @@ Deploying and scaling complex retrieval evaluation metrics across enterprise pro
 
 ---
 
-## 5. Frontier Real-World AI Applications
+## 🚀 5. Frontier Real-World AI Applications
 
 | Application Field | Description | First Used (Year) | Seminal Paper / Reference |
 | :--- | :--- | :--- | :--- |
@@ -82,7 +87,7 @@ Deploying and scaling complex retrieval evaluation metrics across enterprise pro
 
 ---
 
-## References
+## 📚 References
 1. Salton, G., & McGill, M. J. (1986). *Introduction to modern information retrieval*. McGraw-Hill.
 2. Järvelin, K., & Kekäläinen, J. (2002). Cumulated gain-based evaluation of IR techniques. *ACM Transactions on Information Systems (TOIS)*, 20(4), 422-446.
 3. Voorhees, E. M. (2005). TREC: Experiment and evaluation in information retrieval. *MIT Press*.
