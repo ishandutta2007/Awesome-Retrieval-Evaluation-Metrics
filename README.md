@@ -10,7 +10,11 @@ Retrieval Evaluation Metrics are the quantitative mathematical frameworks used t
 The technical framework governing retrieval assessment has transitioned from un-ranked categorical tracking to complex, rank-weighted decay matrices and modern multi-modal, model-driven evaluation agents.
 
 ```mermaid
-[Un-ranked Sets (Precision / Recall)] ───> [Rank-Sensitive Metrics (MAP / MRR)] ───> [Position-Decayed Gains (NDCG)] ───> [Model-Driven Agents (Ragas / G-Eval)](Binary Exact Match Counts)                  (Earliest Reciprocal Success Tracking)          (Continuous Gain Discount Scaling)         (Automated LLM-as-a-Judge Audits)
+flowchart LR
+    A["Un-ranked Sets (Precision / Recall)<br/>(Binary Exact Match Counts)"]
+    --> B["Rank-Sensitive Metrics (MAP / MRR)<br/>(Earliest Reciprocal Success Tracking)"]
+    --> C["Position-Decayed Gains (NDCG)<br/>(Continuous Gain Discount Scaling)"]
+    --> D["Model-Driven Agents (RAGAS / G-Eval)<br/>(Automated LLM-as-a-Judge Audits)"]
 ```
 
 *   **The Un-ranked Set Era (Classical Information Retrieval, ~1960s–1990s)**
@@ -55,7 +59,11 @@ To safeguard large language models from generating factually corrupt or unground
 
 
 ```mermaid
-┌──────────────────────────────────────┐│              User Query              │└──────────────────┬───────────────────┘│Context Relevance│▼┌──────────────────────────────────┴──┐         Answer          ┌─────────────────────────────────────┐│      Retrieved Context Chunks       ├────────────────────────>│          Generated Response         │└─────────────────────────────────────┘        Relevance        └──────────────────┬───────────────────┘│Faithfulness│▼┌─────────────────────────────────────┐│          Programmatic Audit         │└─────────────────────────────────────┘
+flowchart TD
+    A["User Query"]
+    -->|Context Relevance| B["Retrieved Context Chunks"]
+    B -->|Answer Relevance| C["Generated Response"]
+    C -->|Faithfulness| D["Programmatic Audit"]
 ```
 
 
